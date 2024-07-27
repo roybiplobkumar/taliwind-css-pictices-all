@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Shrink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- 
+       grid-rows-1 thake 12
+       grid-rows-subgrid 
+   -->
+    <div class="grid grid-rows-3 grid-flow-col gap-4 ">
+      <div class="bg-blue-200">1</div>
+      <div class="bg-red-200 s">2</div>
+      <div class="bg-red-400 grid  grid-rows-subgrid  row-span-3">
+        <div class="row-start-2">3</div>
+        <div>30</div>
+        <div>300</div>
 
+
+      </div>
+      <div class="bg-red-400">4</div>
+      <div class="bg-red-400">5</div>
+      <div class="bg-red-400">6</div>
+      <div class="bg-red-400">7</div>
+      <div class="bg-red-400">8</div>
+    </div>
+    
+  </body>
+</html>
