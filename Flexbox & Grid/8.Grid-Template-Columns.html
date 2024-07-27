@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template Columns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- 
+ Class
+Properties
+grid-cols-1	grid-template-columns: repeat(1, minmax(0, 1fr));
+grid-cols-2	grid-template-columns: repeat(2, minmax(0, 1fr));
+grid-cols-3	grid-template-columns: repeat(3, minmax(0, 1fr));
+grid-cols-4	grid-template-columns: repeat(4, minmax(0, 1fr));
+grid-cols-5	grid-template-columns: repeat(5, minmax(0, 1fr));
+grid-cols-6	grid-template-columns: repeat(6, minmax(0, 1fr));
+grid-cols-7	grid-template-columns: repeat(7, minmax(0, 1fr));
+grid-cols-8	grid-template-columns: repeat(8, minmax(0, 1fr));
+grid-cols-9	grid-template-columns: repeat(9, minmax(0, 1fr));
+grid-cols-10	grid-template-columns: repeat(10, minmax(0, 1fr));
+grid-cols-11	grid-template-columns: repeat(11, minmax(0, 1fr));
+grid-cols-12	grid-template-columns: repeat(12, minmax(0, 1fr));
+grid-cols-none	grid-template-columns: none;
+grid-cols-subgrid	grid-template-columns: subgrid;
+   -->
+    <div class="grid grid-cols-3 text-end m-auto border border-red-500">
+      <div class="bg-blue-200 w-64">1</div>
+      <div class="bg-red-200 w-28">2</div>
+      <div class="bg-red-400 w-64">3</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- gird-cols-subgrid  -->
+
+    <div class="grid grid-cols-4 gap-4 border border-red-500">
+      <div class="bg-blue-200">1</div>
+      <div class="bg-red-200 grid grid-cols-subgrid col-span-3">
+        <div class="">2 </div>
+      </div>
+      <div class="bg-red-400">3</div>
+      <div class="bg-red-400">
+        4
+      </div>
+      <div class="bg-red-400">5</div>
+      <div class="grid grid-cols-subgrid gap-4 col-span-3 bg-red-400">
+        <div class="col-start-2">06</div>
+      </div>
+      <div class="bg-red-400">7</div>
+      <div class="bg-red-400">8</div>
+    </div>
+  </body>
+</html>
