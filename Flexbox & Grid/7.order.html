@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Shrink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- 
+   order-* --------7
+    
+     -->
+    <div class="flex ">
+      <div class="bg-blue-200 w-64 order-last">1</div>
+      <div class="bg-red-200 w-28 ">2</div>
+      <div class="bg-red-400 w-64 ">3</div>
+      <div class="bg-red-400 w-64 ">3</div>
+      <div class="bg-red-400 w-64 order-last ">7</div>
+      <div class="bg-red-400 w-64 ">3</div>
+      <div class="bg-red-400 w-64 order-first ">6</div>
+      <div class="bg-red-400 w-64 ">3</div>
+    </div>
+  </body>
+</html>
